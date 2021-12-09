@@ -7,5 +7,6 @@ public class DemoGitTest {
 	@Test
 	public void demoGitTest () {
 		System.out.println("Welcome to GitHub");
+		System.out.println("updated");
 	}
 }
