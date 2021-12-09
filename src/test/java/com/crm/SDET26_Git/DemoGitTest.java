@@ -8,7 +8,7 @@ public class DemoGitTest {
 	public void demoGitTest () {
 		System.out.println("Welcome to GitHub");
 		
-		
+		System.out.println("Line 2 added");
 		
 		System.out.println("Added new line");
 	}
