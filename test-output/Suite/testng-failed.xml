@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.vtiger.comcast.genericUtility.ListenerUtilityClass"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.crm.comcast.organizationsTest.Dec06.CreateOrgGroupTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="connectToDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logoutfromApplication"/>
+          <include name="loginToApplication"/>
+          <include name="createOrgTest"/>
+          <include name="closeDatabase"/>
+        </methods>
+      </class> <!-- com.crm.comcast.organizationsTest.Dec06.CreateOrgGroupTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

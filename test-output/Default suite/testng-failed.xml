@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.crm.comcast.contacts.Nov30.CreateContactReport">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createContactReport"/>
+          <include name="connectToDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logoutfromApplication"/>
+          <include name="loginToApplication"/>
+          <include name="closeDatabase"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contacts.Nov30.CreateContactReport -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
