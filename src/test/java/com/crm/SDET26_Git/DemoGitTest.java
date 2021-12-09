@@ -9,5 +9,7 @@ public class DemoGitTest {
 		System.out.println("Welcome to GitHub");
 		
 		System.out.println("Thank you");
+		
+		System.out.println("Added new line");
 	}
 }
