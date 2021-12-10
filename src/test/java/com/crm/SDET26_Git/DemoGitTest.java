@@ -11,5 +11,7 @@ public class DemoGitTest {
 		System.out.println("Line 2 added");
 		
 		System.out.println("Added new line");
+		
+		System.out.println("MVN Test");
 	}
 }
