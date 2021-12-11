@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.crm</groupId>
-  <artifactId>com.crm.SDET26</artifactId>
+  <artifactId>com.crm.SDET26_New</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <name>com.crm.SDET26</name>
@@ -17,6 +17,8 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  
 
   <dependencies>
     <dependency>
@@ -65,11 +67,57 @@
 		
   </dependencies>
   
-
-
+  <profiles>
+  	<profile>
+  		<id>testng123</id>
+  		<build>
+  			<plugins>
+  					<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng123.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+  			</plugins>	
+  		</build>
+  	</profile>
+ 
+  	<profile>
+  		<id>testng456</id>
+  		<build>
+  			<plugins>
+  					<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng456.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+  			</plugins>	
+  		</build>
+  	</profile>
+  </profiles>
+ 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+      	<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -108,8 +156,10 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
-        </plugin>      
+        </plugin>
+        
       </plugins>
     </pluginManagement>
   </build>
+ 
 </project>
