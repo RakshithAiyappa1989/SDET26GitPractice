@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.comcast.contacts.Nov30.CreateContactReport">
+      <class name="com.crm.SDET26_Git.Demo456Test">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="createContactReport"/>
-          <include name="connectToDatabase"/>
-          <include name="closeBrowser"/>
-          <include name="logoutfromApplication"/>
-          <include name="loginToApplication"/>
-          <include name="closeDatabase"/>
+          <include name="travelinfo"/>
         </methods>
-      </class> <!-- com.crm.comcast.contacts.Nov30.CreateContactReport -->
+      </class> <!-- com.crm.SDET26_Git.Demo456Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
